@@ -5,11 +5,10 @@ public class Main {
         int clientBonus = 100;
         int accruedBonuses = accountReplenishment / clientBonus;
 
-        if (accountReplenishment < 1000) {
-            System.out.println("Итоговый счет:" + (currentAccount + accountReplenishment));
-
+        if (accountReplenishment > 1000) {
+            System.out.println("Итоговый счет:" + (currentAccount + accountReplenishment+ accruedBonuses));
         } else {
-            System.out.println("Итоговый счет:" + (currentAccount + accountReplenishment + accruedBonuses));
+            System.out.println("Итоговый счет:" + (currentAccount + accountReplenishment));
         }
     }
 
